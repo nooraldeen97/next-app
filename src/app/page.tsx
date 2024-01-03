@@ -9,13 +9,13 @@ useEffect(()=>{
   console.log('hello')
 },[])
 function increase(){
-  setCount(count+1);
+  setCount(count=>count+1);
 }
 function decrease(){
   if(count===0){
     alert('Sorry , can not go below zero!!');
   }else{
-    setCount(count-1);
+    setCount(count=>count-1);
   }
 }
   return (
